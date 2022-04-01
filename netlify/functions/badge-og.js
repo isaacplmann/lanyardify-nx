@@ -40,12 +40,12 @@ const handler = async (event) => {
   
 
   // Fetch a generated image from Cloudinary
-  const bgImageUrl = "v1629746298/lanyardify/og-badge-blue.png";
+  const bgImageUrl = "v1629746298/badges/og-badge-blue.png";
   const nameLabel = `c_fit,bo_8px_solid_black,l_text:Roboto_42_bold_stroke:${encodeURI(formattedName)},co_rgb:FFFFFF,g_north_west,y_460,x_65,w_560`;
   const salutation = `c_fit,bo_8px_solid_black,l_text:Roboto_38_bold_center_stroke:${salutationText},co_rgb:FFFFFF,g_north_west,y_260,x_690,w_470`;
   const thenImage = `l_lanyardify:${path}-then,g_north_west,w_168,x_65,y_180`;
   const nowImage = `l_lanyardify:${path}-now,g_north_west,w_229,x_319,y_65`;
-  const ogUrl = `https://res.cloudinary.com/netlify/image/upload/${nameLabel}/${salutation}/${thenImage}/${nowImage}/${bgImageUrl}`;
+  const ogUrl = `https://res.cloudinary.com/nx-conf-lite-2022/image/upload/${nameLabel}/${salutation}/${thenImage}/${nowImage}/${bgImageUrl}`;
 
   let image;
   try {

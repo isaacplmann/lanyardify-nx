@@ -94,7 +94,7 @@ exports.handler = async (event) => {
     { when:"now", url: fields.now.dataUri},
     { when:"then", url: fields.then.dataUri}].map((picture) =>
     cloudinary.uploader.upload(picture.url, {
-        folder: "lanyardify",
+        folder: "badges",
         resource_type: "image",
         public_id: `${badgePath}-${picture.when}`,
         transformation: [{ gravity: "faces", crop: "fill", height: 400, width: 400 } ]
