@@ -70,18 +70,22 @@ exports.handler = async (event) => {
   const fields = await handlePost(event);
   console.log({fields});
 
-  // Is this ticket number valid and who is it registered to?
-  const userData = await tito.query(fields.ticket);
+  // // Is this ticket number valid and who is it registered to?
+  // const userData = await tito.query(fields.ticket);
 
-  // If no ticket found with this number, send to the registration page
-  if (!userData || !userData.ticket) {
-    console.log(`no ticket data found`);
-    return {
-      statusCode: 302,
-      headers: {
-        Location: `https://jamstackconf.com/`,
-      },
-    };
+  // // If no ticket found with this number, send to the registration page
+  // if (!userData || !userData.ticket) {
+  //   console.log(`no ticket data found`);
+  //   return {
+  //     statusCode: 302,
+  //     headers: {
+  //       Location: `https://jamstackconf.com/`,
+  //     },
+  //   };
+  // }
+
+  const userData = {
+    name: "Isaac Mann"
   }
 
   // generate an (almost certainly) unique path
