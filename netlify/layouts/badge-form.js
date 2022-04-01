@@ -23,7 +23,7 @@ const form = (userData, options = {}) => {
   } else {
     nameField = `<div class="guidance">
     <p>
-      No ticket? No problem!</p><p>Get one by <a href="https://jamstackconf.com/#register">registering for free</a>
+      No ticket? No problem!</p><p>Get one by <a href="https://ti.to/nrwl/nx-conf-lite-2022">registering for free</a>
     </p>
     </div>
   `;

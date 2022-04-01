@@ -6,7 +6,7 @@ const tito = require('../api/tito.js');
 const page = require('../layouts/badge-form.js');
 
 // Not available via ENV variable
-const host = "https://jamstackconf.com";
+const host = "https://nx.dev/conf";
 
 exports.handler = async (event) => {
   

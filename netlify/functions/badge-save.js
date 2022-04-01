@@ -79,7 +79,7 @@ exports.handler = async (event) => {
   //   return {
   //     statusCode: 302,
   //     headers: {
-  //       Location: `https://jamstackconf.com/`,
+  //       Location: `https://nx.dev/conf`,
   //     },
   //   };
   // }
@@ -130,7 +130,8 @@ exports.handler = async (event) => {
       DisplayName: userData.name,
       ImageNowUrl: result[0].secure_url,
       ImageThenUrl: result[1].secure_url,
-      OptOut: fields.excludeFromSite
+      OptOut: fields.excludeFromSite,
+      Banned: false
     }
   );
 

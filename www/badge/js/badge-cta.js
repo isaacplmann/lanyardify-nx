@@ -6,7 +6,7 @@ const updateCTA = () => {
     // Update CTA
     const primaryCTA = document.getElementsByClassName("primary-cta")[0]; 
     const badgeId = window.location.pathname.split("/")[2];
-    primaryCTA.href = `https://twitter.com/intent/tweet?text=Got my badge ready for @jamstackconf 2021! See you there? https://jamstackconf.com/badge/${badgeId}`;
+    primaryCTA.href = `https://twitter.com/intent/tweet?text=Got my badge ready for @nxdevtools Conf Lite 2022! See you there? https://nx-conf-lite.netlify.app/badge/${badgeId}`;
     primaryCTA.innerHTML = "Show off your badge!";
 
     // hide tout

@@ -34,7 +34,7 @@ const handler = async (event) => {
     return {
       statusCode: 302,
       headers: {
-        Location: `https://jamstackconf.com/`,
+        Location: `https://nx.dev/conf`,
       },
     };
   }

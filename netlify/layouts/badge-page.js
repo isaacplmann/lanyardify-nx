@@ -21,11 +21,11 @@ module.exports = (data) => {
           Register and create your own badge!
         </p>
         <p>
-          <a class="primary-cta panel-shadow" href="https://jamstackconf.com">Join the party!</a>
+          <a class="primary-cta panel-shadow" href="https://nx.dev/conf">Join the party!</a>
         </p>
       </div>
       <p>
-        Not appropriate? <a href="mailto:community@jamstack.org?subject=Inappropriate image - ${data.Path}&body=I am reporting the images on the following page as inappropriate: https://jamstackconf.com/badge/${data.Path}">Let us know</a>.
+        Not appropriate? <a href="mailto:devrel@nrwl.io?subject=Inappropriate image - ${data.Path}&body=I am reporting the images on the following page as inappropriate: https://nx-conf-lite.netlify.app/badge/${data.Path}">Let us know</a>.
       </p>
     </div>  
     <div class="badge-pane">
