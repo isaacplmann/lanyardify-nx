@@ -18,7 +18,6 @@ const handler = async (event) => {
   const path = event.path.split("/badge/")[1];
 
   console.log(`show badge ${path}`);
-  
 
   // Connect to database and fetch data
   const supabase = createClient(DATABASE_URL, SUPABASE_SERVICE_API_KEY);
