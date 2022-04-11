@@ -40,7 +40,8 @@ const handler = async (event) => {
 
   // Fetch a generated image from Cloudinary
   const bgImageUrl = "v1649705462/badges/badge_sample.png";
-  const nameLabel = `c_fit,bo_8px_solid_black,l_text:InputMono-Regular.ttf_32_center:${encodeURI(formattedName)},co_rgb:FFFFFF,g_north_west,y_260,x_165,w_560`;
+  const nameLabel = `c_fit,bo_8px_solid_black,l_text:Roboto_32_center:${encodeURI(formattedName)},co_rgb:FFFFFF,g_north_west,y_260,x_165,w_560`;
+  // const nameLabel = `c_fit,bo_8px_solid_black,l_text:InputMono-Regular.ttf_32_center:${encodeURI(formattedName)},co_rgb:FFFFFF,g_north_west,y_260,x_165,w_560`;
   // const salutation = `c_fit,bo_8px_solid_black,l_text:Roboto_38_bold_center_stroke:${salutationText},co_rgb:FFFFFF,g_north_west,y_260,x_690,w_470`;
   // const thenImage = `l_lanyardify:${path}-then,g_north_west,w_168,x_65,y_180`;
   // const nowImage = `l_lanyardify:${path}-now,g_north_west,w_229,x_319,y_65`;
