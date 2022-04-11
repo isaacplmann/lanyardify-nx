@@ -116,7 +116,6 @@ exports.handler = async (event) => {
     }
   });
 
-  
   // Connect to database
   const supabase = createClient(DATABASE_URL, SUPABASE_SERVICE_API_KEY);
 
