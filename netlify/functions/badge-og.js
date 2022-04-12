@@ -32,13 +32,11 @@ const handler = async (event) => {
   }
 
   let badgeData = data[0];
-  const salutationText = encodeURI(`${badgeData.DisplayName.split(" ")[0]} will be lookin’ hella fly at Jamstack Conf this year!`);
   
-  // /l_text:k8nika7k7bkdaxbzauw3.ttf_48_center:@MannIsaac,co_rgb:FFFFFF,y_-10,x_182,c_fit/v1649705462/badges/badge_bg.png
   // Fetch a generated image from Cloudinary
   const bgImageUrl = "v1649705462/badges/badge_bg.png";
-  const nameLabel = `b_rgb:0B1A2D,bo_20px_solid_rgb:0B1A2D,r_5,l_text:k8nika7k7bkdaxbzauw3.ttf_64_center:${badgeData.DisplayName},co_rgb:FFFFFF,y_-140,x_182,c_fit`;
-  const twitterLabel = `l_text:k8nika7k7bkdaxbzauw3.ttf_48_center:${badgeData.TwitterHandle},co_rgb:FFFFFF,y_-10,x_182,c_fit`;
+  const nameLabel = `b_rgb:0B1A2D,bo_16px_solid_rgb:0B1A2D,r_1,l_text:k8nika7k7bkdaxbzauw3.ttf_38_center:${badgeData.DisplayName},co_rgb:FFFFFF,y_-82,x_108,c_fit`;
+  const twitterLabel = `l_text:k8nika7k7bkdaxbzauw3.ttf_28_center:${badgeData.TwitterHandle},co_rgb:FFFFFF,y_-6,x_108,c_fit`;
   const ogUrl = `https://res.cloudinary.com/nx-conf-lite-2022/image/upload/c_scale,w_1200/${nameLabel}/${twitterLabel}/${bgImageUrl}`;
 
   let image;
