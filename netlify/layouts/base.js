@@ -4,16 +4,16 @@ const og = (data) => {
   const badge = data.badgeNumber || "";
 
   return `
-  <meta property="og:title" content="Jamstack Conf 2021">
-  <meta property="og:site_name" content="Jamstack.org">
+  <meta property="og:title" content="Nx Conf Lite 2022">
+  <meta property="og:site_name" content="nx.dev/conf">
   <meta property="og:url" content="${rootURL}badge/${badge}">
-  <meta property="og:description" content="Got my ticket for Jamstack Conf 2021">
+  <meta property="og:description" content="Got my ticket for Nx Conf Lite 2022">
   <meta property="og:type" content="website">
   <meta property="og:image" content="${rootURL}og/badge/${badge}">
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="${rootURL}badge/${badge}">
-  <meta property="twitter:title" content="Jamstack Conf 2021">
-  <meta property="twitter:description" content="Got my ticket for Jamstack Conf 2021">
+  <meta property="twitter:title" content="Nx Conf Lite 2022">
+  <meta property="twitter:description" content="Got my ticket for Nx Conf Lite 2022">
   <meta property="twitter:image" content="${rootURL}og/badge/${badge}">
   `;
 }

@@ -22,11 +22,11 @@ exports.handler = async (event) => {
   // if ticket number not found in the URL and cookie value exists, redirect
   if(!ticketNumber && event.headers.cookie) {
     let cookies = cookie.parse(event.headers.cookie);
-    if(cookies["jamstack-last-ticket-registration-slug"]) {
+    if(cookies["nx-conf-last-ticket-registration-slug"]) {
       return {
         statusCode: 302,
         headers: {
-          Location: `${host}/badge/make/${cookies["jamstack-last-ticket-registration-slug"]}`,
+          Location: `${host}/badge/make/${cookies["nx-conf-last-ticket-registration-slug"]}`,
           "Cache-Control": "no-cache",
         },
       };

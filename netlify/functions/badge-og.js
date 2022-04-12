@@ -39,7 +39,7 @@ const handler = async (event) => {
   const bgImageUrl = "v1649705462/badges/badge_bg.png";
   const nameLabel = `b_rgb:0B1A2D,bo_20px_solid_rgb:0B1A2D,r_5,l_text:k8nika7k7bkdaxbzauw3.ttf_64_center:${badgeData.DisplayName},co_rgb:FFFFFF,y_-140,x_182,c_fit`;
   const twitterLabel = `l_text:k8nika7k7bkdaxbzauw3.ttf_48_center:${badgeData.TwitterHandle},co_rgb:FFFFFF,y_-10,x_182,c_fit`;
-  const ogUrl = `https://res.cloudinary.com/nx-conf-lite-2022/image/upload/${nameLabel}/${twitterLabel}/${bgImageUrl}`;
+  const ogUrl = `https://res.cloudinary.com/nx-conf-lite-2022/image/upload/c_scale,w_1200/${nameLabel}/${twitterLabel}/${bgImageUrl}`;
 
   let image;
   try {
