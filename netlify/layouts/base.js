@@ -10,11 +10,11 @@ const og = (data) => {
   <meta property="og:description" content="Got my ticket for Nx Conf Lite 2022">
   <meta property="og:type" content="website">
   <meta property="og:image" content="${rootURL}og/badge/${badge}">
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="${rootURL}badge/${badge}">
-  <meta property="twitter:title" content="Nx Conf Lite 2022">
-  <meta property="twitter:description" content="Got my ticket for Nx Conf Lite 2022">
-  <meta property="twitter:image" content="${rootURL}og/badge/${badge}">
+  <meta name="twitter:card" property="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" property="twitter:url" content="${rootURL}badge/${badge}">
+  <meta name="twitter:title" property="twitter:title" content="Nx Conf Lite 2022">
+  <meta name="twitter:description" property="twitter:description" content="Got my ticket for Nx Conf Lite 2022">
+  <meta name="twitter:image" property="twitter:image" content="${rootURL}og/badge/${badge}">
   `;
 }
 
