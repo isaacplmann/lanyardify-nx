@@ -34,18 +34,12 @@ const handler = async (event) => {
   let badgeData = data[0];
   const salutationText = encodeURI(`${badgeData.DisplayName.split(" ")[0]} will be lookin’ hella fly at Jamstack Conf this year!`);
   
-  // only split the name on the final space
-  var lastSpace = badgeData.DisplayName.lastIndexOf(' ');
-  const formattedName = `${badgeData.DisplayName}`;
-
+  // /l_text:k8nika7k7bkdaxbzauw3.ttf_48_center:@MannIsaac,co_rgb:FFFFFF,y_-10,x_182,c_fit/v1649705462/badges/badge_bg.png
   // Fetch a generated image from Cloudinary
-  const bgImageUrl = "v1649705462/badges/badge_sample.png";
-  const nameLabel = `c_fit,bo_8px_solid_black,l_text:Roboto_32_center:${encodeURI(formattedName)},co_rgb:FFFFFF,g_north_west,y_260,x_165,w_560`;
-  // const nameLabel = `c_fit,bo_8px_solid_black,l_text:InputMono-Regular.ttf_32_center:${encodeURI(formattedName)},co_rgb:FFFFFF,g_north_west,y_260,x_165,w_560`;
-  // const salutation = `c_fit,bo_8px_solid_black,l_text:Roboto_38_bold_center_stroke:${salutationText},co_rgb:FFFFFF,g_north_west,y_260,x_690,w_470`;
-  // const thenImage = `l_lanyardify:${path}-then,g_north_west,w_168,x_65,y_180`;
-  // const nowImage = `l_lanyardify:${path}-now,g_north_west,w_229,x_319,y_65`;
-  const ogUrl = `https://res.cloudinary.com/nx-conf-lite-2022/image/upload/${nameLabel}/${bgImageUrl}`;
+  const bgImageUrl = "v1649705462/badges/badge_bg.png";
+  const nameLabel = `b_rgb:0B1A2Dcc,bo_20px_solid_rgb:0B1A2Dcc,r_5,l_text:k8nika7k7bkdaxbzauw3.ttf_64_center:${badgeData.DisplayName},co_rgb:FFFFFF,y_-140,x_182,c_fit`;
+  const twitterLabel = `l_text:k8nika7k7bkdaxbzauw3.ttf_48_center:${badgeData.TwitterHandle},co_rgb:FFFFFF,y_-10,x_182,c_fit`;
+  const ogUrl = `https://res.cloudinary.com/nx-conf-lite-2022/image/upload/${nameLabel}/${twitterLabel}/${bgImageUrl}`;
 
   let image;
   try {
