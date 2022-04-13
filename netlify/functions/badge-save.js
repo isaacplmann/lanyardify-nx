@@ -1,6 +1,6 @@
 const stream = require("stream");
 const Busboy = require("busboy");
-const cloudinary = require("cloudinary").v2;
+// const cloudinary = require("cloudinary").v2;
 const { createClient } = require('@supabase/supabase-js');
 const { customAlphabet } = require('nanoid');
 const tito = require('../api/tito.js');
@@ -93,29 +93,6 @@ exports.handler = async (event) => {
   const nanoid = customAlphabet(alphabet, 12);
   const badgePath = nanoid();
 
-  // upload the images to cloudinary and get URLs
-  let uploadPromises = [
-    { when:"now", url: fields.now.dataUri},
-    { when:"then", url: fields.then.dataUri}].map((picture) =>
-    cloudinary.uploader.upload(picture.url, {
-        folder: "badges",
-        resource_type: "image",
-        public_id: `${badgePath}-${picture.when}`,
-        transformation: [{ gravity: "faces", crop: "fill", height: 400, width: 400 } ]
-      })
-    );
-
-  const result = await Promise.all(uploadPromises).catch(function(err) {
-    console.log("Cloudinary error:", err.message);
-    // Render a response
-    return {
-      statusCode: 302,
-      headers: {
-        Location: `/badge/make#imageError`,
-      },
-    }
-  });
-
   // Connect to database
   const supabase = createClient(DATABASE_URL, SUPABASE_SERVICE_API_KEY);
 
@@ -126,10 +103,8 @@ exports.handler = async (event) => {
     {
       TicketNumber: fields.ticket,
       Path: badgePath,
-      DisplayName: userData.name,
-      ImageNowUrl: result[0].secure_url,
-      ImageThenUrl: result[1].secure_url,
-      OptOut: fields.excludeFromSite,
+      DisplayName: fields.name,
+      TwitterHandle: fields.twitter,
       Banned: false
     }
   );

@@ -130,7 +130,32 @@ label {
   color: #fff;
 }
 
-.badge-label {
+.info-pane {
+  border: solid 2px white;
+  border-radius: 20px;
+  padding: 20px;
+  width: 50%;
+  margin: 30px auto;
+  max-width: 1200px;
+  min-width: 600px;
 }
-.badge-name {
+.form-field {
+  display: flex;
+  margin: 0.5em 0;
+}
+.form-field > label {
+  text-align: right;
+  padding-right: 10px;
+}
+.form-field > * {
+  flex: 1;
+}
+input[type=text] {
+  padding: 2px;
+}
+
+input[type=submit] {
+  display: block;
+  margin: auto;
+  padding: 5px;
 }
