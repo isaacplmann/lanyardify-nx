@@ -122,8 +122,11 @@ p {
 
 a:link,
 a:visited {
-  text-decoration: none;
   color: #fff;
+}
+
+.card a {
+  text-decoration: none;
 }
 
 label {
