@@ -21,6 +21,11 @@ module.exports = (data) => {
     </div>
     <div class="pyramid"></div>
   </div>
+
+  <div class="info-pane">
+    <p><a class="primaryCTA></a></p>
+    <p class="tout-register">Learn more about Nx Conf Lite at <a href="https://nx.dev/conf">nx.dev/conf</a></p>
+  </div>  
   `;
 
   return page({
