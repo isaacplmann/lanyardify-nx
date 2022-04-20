@@ -7,6 +7,12 @@
   command = "echo no build command"
 
 [[redirects]]
+  from = "/"
+  to = "/badge/make"
+  force = true
+  status = 301
+
+[[redirects]]
   from = "/badge/save"
   to = "/.netlify/functions/badge-save"
   status = 200
