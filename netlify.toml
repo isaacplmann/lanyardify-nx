@@ -12,6 +12,11 @@
   status = 200
 
 [[redirects]]
+  from = "/"
+  to = "/badge/make"
+  status = 200
+
+[[redirects]]
   from = "/badge/make/*"
   to = "/.netlify/functions/badge-make"
   status = 200
