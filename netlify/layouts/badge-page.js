@@ -24,7 +24,7 @@ module.exports = (data) => {
 
   <div class="info-pane">
     <p><a class="primary-cta" href></a></p>
-    <p id="tout-register">Learn more about Nx Conf Lite at <a href="https://nx.dev/conf">nx.dev/conf</a></p>
+    <p id="tout-register">Learn more about Nx Conf at <a href="https://nx.dev/conf">nx.dev/conf</a></p>
   </div>  
   `;
 
