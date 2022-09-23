@@ -1,6 +1,6 @@
 const og = (data) => {
 
-  const rootURL = "https://nx-conf-lite.netlify.app/";
+  const rootURL = "https://nx-conf.netlify.app/";
   const badge = data.badgeNumber || "";
 
   return `
