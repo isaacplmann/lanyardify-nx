@@ -34,7 +34,7 @@ const handler = async (event) => {
   let badgeData = data[0];
   
   // Fetch a generated image from Cloudinary
-  const bgImageUrl = "v1649705462/badges/nx-conf-badge.png";
+  const bgImageUrl = "v1689183083/nx-conf-badge-2023.jpg";
   const nameLabel = `b_rgb:0B1A2D,bo_16px_solid_rgb:0B1A2D,r_1,l_text:k8nika7k7bkdaxbzauw3.ttf_38_center:${badgeData.DisplayName},co_rgb:FFFFFF,y_-82,x_108,c_fit`;
   const twitterLabel = `l_text:k8nika7k7bkdaxbzauw3.ttf_28_center:${badgeData.TwitterHandle},co_rgb:FFFFFF,y_-6,x_108,c_fit`;
   const ogUrl = `https://res.cloudinary.com/nx-conf-lite-2022/image/upload/c_scale,w_1200/${nameLabel}/${twitterLabel}/${bgImageUrl}`;

@@ -6,7 +6,7 @@ const updateCTA = () => {
     // Update CTA
     const primaryCTA = document.getElementsByClassName("primary-cta")[0]; 
     const badgeId = window.location.pathname.split("/")[2];
-    const text = encodeURIComponent('Got my badge ready for @NxDevTools Conf 2022! #NxConf2022 See you there?');
+    const text = encodeURIComponent('Got my badge ready for @NxDevTools Conf 2023! #NxConf2023 See you there?');
     const url = encodeURIComponent(`https://nx-conf.netlify.app/badge/${badgeId}`);
     primaryCTA.href = `https://twitter.com/intent/tweet?text=${text}&url=${url}`;
     primaryCTA.innerHTML = "Show off your badge!";

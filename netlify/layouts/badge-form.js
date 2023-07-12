@@ -60,7 +60,7 @@ const form = (userData, options = {}) => {
   <div class="container">
 
     <div class="info-pane">
-      <h1>Nx Conf 2022</h1>
+      <h1>Nx Conf 2023</h1>
       <div class="panel-blue panel-shadow">
         <p class="salutation">Create your virtual badge!</p>
 
@@ -78,13 +78,13 @@ const form = (userData, options = {}) => {
       <h1 class="logo"><img src="/badge/img/nx-conf-logo.png" alt="nx conf"></h1>
       <div class="donut"></div>
       <div class="card">
-        <div class="top-bar">2022</div>
+        <div class="top-bar">2023</div>
         <div class="badge-label">
           <p class="badge-name" id="badge-name">${copy.displayName}</p>
           <p class="badge-twitter" id="badge-twitter">@NxFan</p>
         </div>
         <div class="bottom-bar">
-          <span class="date">October 17th</span>
+          <span class="date">September 26th</span>
           <span class="cta"><a href="https://nx.dev/conf">nx.dev/conf <svg width="29" height="11" viewBox="0 0 29 11" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M27.1105 6.00885H0V4.99115H27.1105L22.9676 0.719626L23.6656 0L29 5.5L23.6656 11L22.9676 10.2804L27.1105 6.00885Z" fill="white"/>
             </svg></a></span>

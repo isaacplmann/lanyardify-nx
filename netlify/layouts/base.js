@@ -4,16 +4,16 @@ const og = (data) => {
   const badge = data.badgeNumber || "";
 
   return `
-  <meta property="og:title" content="Nx Conf 2022">
+  <meta property="og:title" content="Nx Conf 2023">
   <meta property="og:site_name" content="nx.dev/conf">
   <meta property="og:url" content="${rootURL}badge/${badge}">
-  <meta property="og:description" content="Got my ticket for Nx Conf 2022">
+  <meta property="og:description" content="Got my ticket for Nx Conf 2023">
   <meta property="og:type" content="website">
   <meta property="og:image" content="${rootURL}og/badge/${badge}">
   <meta name="twitter:card" property="twitter:card" content="summary_large_image">
   <meta name="twitter:url" property="twitter:url" content="${rootURL}badge/${badge}">
-  <meta name="twitter:title" property="twitter:title" content="Nx Conf 2022">
-  <meta name="twitter:description" property="twitter:description" content="Got my ticket for Nx Conf 2022">
+  <meta name="twitter:title" property="twitter:title" content="Nx Conf 2023">
+  <meta name="twitter:description" property="twitter:description" content="Got my ticket for Nx Conf 2023">
   <meta name="twitter:image" property="twitter:image" content="${rootURL}og/badge/${badge}">
   `;
 }
